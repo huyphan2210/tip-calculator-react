@@ -1,0 +1,59 @@
+:root {
+    --strong-cyan: hsl(172, 67%, 45%);
+    --very-dark-cyan: hsl(183, 100%, 15%);
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+    .inputs {
+        margin-right: 2rem;
+    }
+
+        .input:first-child {
+            margin-block-end: 1rem;
+        }
+        .selectTip {
+            margin-block: 1rem;
+        }
+        #tipPercentage {
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            gap: 1rem;
+            margin-block-start: 0.5rem;
+        }
+            #tipPercentage button {
+                font-family: 'Space Mono', sans-serif;
+                color: white;
+                background-color: var(--very-dark-cyan);
+                border-width: 0;
+                border-radius: 0.3rem;
+                padding: 0.5rem;
+                font-size: 1.2rem;
+            }
+
+                #tipPercentage button:hover {
+                    cursor: pointer;
+                    color: var(--very-dark-cyan);
+                    background-color: var(--strong-cyan);
+                }
+
+            #tipPercentage input {
+                font-family: 'Space Mono', sans-serif;
+                border-style: solid;
+                border-radius: 0.3rem;
+                padding: 0.5rem;
+                font-size: 1.2rem;
+                border-color: transparent;
+            }
+                #tipPercentage input::placeholder {
+                    
+                    text-align: end;
+                }
+
+    .result {
+        background-color: var(--very-dark-cyan);
+        padding: 2rem;
+        border-radius: 1rem;
+    }
