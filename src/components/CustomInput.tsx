@@ -10,7 +10,7 @@ function Input(props: {
             <label htmlFor={props.label.replace(' ', '-')}><small>{props.label}</small></label>
             <div>
                 <img src={props.icon} alt={props.icon}></img>
-                <input id={props.label.replace(' ', '-')}></input>
+                <input id={props.label.replace(' ', '-')} placeholder='0'></input>
             </div>
             
         </div>
