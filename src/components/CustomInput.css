@@ -1,24 +1,33 @@
-
-    
-    .input label {
-        display: block;
+.input label {
+    display: block;
+}
+    .input div {
+        position: relative;
     }
-        .input div {
-            position: relative;
+        .input div img {
+            position: absolute;
+            top: 0;
+            left: 0.6rem;
+            transform: translate(0, 1rem);
         }
-            .input div img {
-                position: absolute;
-                top: 0;
-                left: 0.6rem;
-                transform: translate(0, calc(50% + 0.1rem));
+        .input div input {
+            background-color: var(--very-light-grayish-cyan);
+            color: var(--very-dark-cyan);
+            font-size: 1.2rem;
+            text-align: end;
+            margin-block-start: 0.5rem;
+            display: block;
+            width: calc(100% - 1rem);
+            padding: 0.5rem;
+            border-width: 0rem;
+            border-radius: 0.3rem;
+            border-style: solid;
+            font-family: 'Space Mono', sans-serif;
+        }
+            .input div input::placeholder {
+                color: var(--dark-grayish-cyan);
             }
-            .input div input {
-                margin-block-start: 0.5rem;
-                display: block;
-                width: calc(100% - 1rem);
-                padding: 0.5rem;
-                border-width: 0.1rem;
-                border-radius: 0.3rem;
-                border-style: solid;
-                font-family: 'Space Mono', sans-serif;
+            .input div input:focus {
+                outline-color: var(--strong-cyan);
+                caret-color: var(--strong-cyan);
             }
